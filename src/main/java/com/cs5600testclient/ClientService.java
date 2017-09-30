@@ -34,7 +34,6 @@ public class ClientService {
             ip = argv[IP];
             port = argv[PORT];
         }
-
         String url = "http://" + ip + ":" + port + "/firstweb_war/rest/myresource";
 
         ExecutorService threadPool = Executors.newFixedThreadPool(threadNum);
@@ -43,7 +42,7 @@ public class ClientService {
         Counter requests = new Counter();
         Counter successRequest = new Counter();
 
-        System.out.println("Threads are requesting...");
+        System.out.println(threadNum + " threads are requesting...");
         Util.redirectOutputToLog();
         long startTime = System.currentTimeMillis();
         for (int i = 0; i < threadNum; i++) {

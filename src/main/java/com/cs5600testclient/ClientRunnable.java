@@ -1,15 +1,10 @@
 package com.cs5600testclient;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.CyclicBarrier;
 
 import javax.ws.rs.client.*;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 
 /**
  * Created by saikikwok on 28/09/2017.
